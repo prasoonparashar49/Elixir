@@ -1,0 +1,17 @@
+html is noun, css is adjective and javascript is verb.
+
+div and span are not useful until you specify styling property using css.
+What they do they allow you to group content togather.
+div is a generic container.
+span on the other hand is also a generic container but there is a difference.
+div is a generic level block container
+
+IDE
+Visual studio Code(frontend - HTML/CSS/JS)
+Jetbrain Webstorm(Nodejs/Backend/Large Projects) jetbrains.com/student
+
+Books
+1.cb.lk/books
+2.You-don't-know-Js
+3.MDN
+github.com/coding-blocks-archives/WebNodeLive2017Winter/Webinar01
