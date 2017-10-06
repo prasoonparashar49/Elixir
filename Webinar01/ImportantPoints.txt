@@ -1,0 +1,13 @@
+innerHtml += is  a heavy operation.
+https://stackoverflow.com/questions/11515383/why-is-element-innerhtml-bad-code
+Mostly, you should ask yourself before applying it. It can be used in the case when inner html is bare string
+
+Difference between innerHtml and innerText
+
+innerHtml += preserves html styling
+innerText += doesnot preserve html styling. The styling information is taken as text.
+If you want to maintain html styling also along with text you should use innerHtml, otherwise you should use innerText
+
+For most of the times we will try to touch the DOM as less as possible, we will make our changes elsewhere and change the DOM less number of
+times. Touching the DOM itself brings a lot of cost in memory cost and time cost. So while making changes in the javascript, make sure that 
+you edit the DOM as less as possible.
