@@ -1,0 +1,53 @@
+<html>
+<head>
+	<title>fizzbuzz</title>
+</head>
+<body>
+	<input id = 'input'><button id='btn'>Print</button>
+	<ul id = 'printArea'>
+	</ul>
+	<script>
+		let inputBox = document.getElementById('input');
+		let printBtn = document.getElementById('btn');
+		let printArea = document.getElementById('printArea');
+		printBtn.onclick = function(){
+			let startTime = new Date().getTime();
+			let n = inputBox.value;
+			for(var i = 1; i <= n; i++) {
+				let listItem = document.createElement('li');
+				let text = "";
+				if(i%15 == 0){
+					listItem.innerText = "fizzbuzz";
+				}
+				else {
+						if(i%3 == 0){
+							listItem.innerText = "fizz";
+						} 
+						else {
+							if(i%5 == 0){
+								listItem.innerText = "buzz";
+							}
+							else{
+								listItem.innerText = i;
+							}
+						}
+					}
+				/*if(i%3 == 0){
+					text += "fizz";
+				}
+				if(i%5 == 0){
+					text += "buzz";
+				}
+				if(text == ""){
+					text += i;
+				}
+				//try to substitute modulo with the counter
+				listItem.innerText = text;*/
+				printArea.appendChild(listItem);
+			} 
+			let endTime = new Date().getTime();
+			console.log("time elapsed: " +(endTime - startTime));
+		} 
+	</script>
+</body>
+</html>
