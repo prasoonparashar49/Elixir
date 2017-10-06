@@ -1,0 +1,37 @@
+Why version control
+Backup and Restore
+we can go back and see how the file was earlier.
+Synchronization
+share files and stay up to date
+Undo
+History
+Sandboxing
+
+To get the code and history of any repository, you clone it.
+git clone git://github.com/rturk/ack
+
+To create new repository
+git init
+
+To see the history of any repository, you see the log of it.
+git log
+
+You can set the current branch you are using
+git branch
+
+You can change the current branch
+git checkout foobar
+
+Once you have isolated a branch, you will want to incorporate those changes back into the main branch. You want to select the branch you want to
+merge into and specify the branch you are merging from.
+git checkout stable
+git merge master
+
+Download for windows
+http://git-scm.com
+
+Ubuntu:
+sudo apt-get install git
+
+Mac:
+brew install git
