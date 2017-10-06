@@ -16,23 +16,7 @@
 			for(var i = 1; i <= n; i++) {
 				let listItem = document.createElement('li');
 				let text = "";
-				if(i%15 == 0){
-					listItem.innerText = "fizzbuzz";
-				}
-				else {
-						if(i%3 == 0){
-							listItem.innerText = "fizz";
-						} 
-						else {
-							if(i%5 == 0){
-								listItem.innerText = "buzz";
-							}
-							else{
-								listItem.innerText = i;
-							}
-						}
-					}
-				/*if(i%3 == 0){
+				if(i%3 == 0){
 					text += "fizz";
 				}
 				if(i%5 == 0){
@@ -41,7 +25,6 @@
 				if(text == ""){
 					text += i;
 				}
-				//try to substitute modulo with the counter
 				listItem.innerText = text;*/
 				printArea.appendChild(listItem);
 			} 
