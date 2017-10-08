@@ -38,3 +38,11 @@ brew install git
 
 git log gives the log
 git log --oneline gives the concise log
+git --diff shows the difference between what is not being staged for comitting and what is already been comitted. So if you have already added
+something not yet committed, it has nothing staged, so it wont show any diff
+
+git checkout -b gitlearning
+created a new branch and checked it out
+
+//checks out existing branch
+git checkout existingbranch
