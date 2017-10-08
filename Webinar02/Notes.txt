@@ -38,3 +38,10 @@ brew install git
 
 git log gives the log
 git log --oneline gives the concise log
+
+git branch
+gives the information about the branch
+
+git diff
+tells difference between what is not staged for commiting and what has already been comitted. So if you already added something not yet
+comitted then that does not show up the git diff.
